@@ -11,8 +11,9 @@ if (timer <= 0) {
 	
 	height += 4 * terrain_dir;
 	
-	var terrain = instance_create_layer(room_width, room_height - height, terrain_layer, obj_terrain);
+	var terrain = instance_create_layer(room_width, room_height, terrain_layer, obj_terrain);
 	terrain.x_speed = x_speed;
+	terrain.height = height;
 	
 	timer = timer_max;
 }
