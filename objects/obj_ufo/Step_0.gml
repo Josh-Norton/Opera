@@ -1,9 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-var up = keyboard_check(vk_up) || mouse_check_button(mb_left);
-var shoot = true;//keyboard_check(vk_right);
+event_user(1);
 
-if (up) {
+if (up_button) {
 	y_speed -= 0.25;
 }
 else {
@@ -28,7 +27,7 @@ if (y > room_height) {
 }
 
 laser_timer--;
-if (laser_timer <= 0 && shoot) {
+if (laser_timer <= 0 && shoot_button) {
 	var sound = audio_play_sound(snd_shoot, 0, false);
 	audio_sound_pitch(sound, random_range(0.7, 1));
 	
@@ -38,6 +37,7 @@ if (laser_timer <= 0 && shoot) {
 	
 	var laser = instance_create_layer(x + ldx, y + ldy, "Instances", obj_laser);
 	laser.dir = dir;
+	laser.player = player;
 	
 	laser_timer = laser_timer_max;
 }
