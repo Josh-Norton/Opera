@@ -4,6 +4,7 @@
     {"id":{"name":"snd_shoot","path":"sounds/snd_shoot/snd_shoot.yy",},"order":0,},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},"order":2,},
     {"id":{"name":"spr_ufo","path":"sprites/spr_ufo/spr_ufo.yy",},"order":1,},
+    {"id":{"name":"snd_hurt","path":"sounds/snd_hurt/snd_hurt.yy",},"order":3,},
     {"id":{"name":"snd_break","path":"sounds/snd_break/snd_break.yy",},"order":2,},
     {"id":{"name":"shad_white","path":"shaders/shad_white/shad_white.yy",},"order":0,},
     {"id":{"name":"snd_hit","path":"sounds/snd_hit/snd_hit.yy",},"order":1,},

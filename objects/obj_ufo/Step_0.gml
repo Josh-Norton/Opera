@@ -41,3 +41,15 @@ if (laser_timer <= 0 && shoot) {
 	
 	laser_timer = laser_timer_max;
 }
+
+flash_timer--;
+if (flash_timer <= 0) {
+	flash = !flash;
+	
+	flash_timer = flash_timer_max;
+}
+
+flashing_timer--;
+if (flashing_timer <= 0) {
+	flashing_timer = 0;
+}

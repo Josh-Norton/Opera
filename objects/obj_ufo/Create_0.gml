@@ -5,3 +5,10 @@ y_speed = 0;
 
 laser_timer_max = 10;
 laser_timer = laser_timer_max;
+
+flash = false;
+flash_timer_max = 5;
+flash_timer = flash_timer_max;
+
+flashing_timer_max = 120;
+flashing_timer = 0;
