@@ -2,6 +2,8 @@
 // You can write your code in this editor
 browser = os_browser != browser_not_a_browser;
 
+show_message(browser);
+
 width = window_get_width();
 height = window_get_height();
 

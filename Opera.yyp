@@ -15,6 +15,7 @@
     {"id":{"name":"spr_laser","path":"sprites/spr_laser/spr_laser.yy",},"order":2,},
     {"id":{"name":"obj_rock_part","path":"objects/obj_rock_part/obj_rock_part.yy",},"order":7,},
     {"id":{"name":"spr_rock","path":"sprites/spr_rock/spr_rock.yy",},"order":3,},
+    {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"order":12,},
     {"id":{"name":"obj_ufo","path":"objects/obj_ufo/obj_ufo.yy",},"order":1,},
     {"id":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},"order":6,},
     {"id":{"name":"obj_terrain","path":"objects/obj_terrain/obj_terrain.yy",},"order":9,},

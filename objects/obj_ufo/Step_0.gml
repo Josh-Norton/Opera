@@ -53,3 +53,7 @@ flashing_timer--;
 if (flashing_timer <= 0) {
 	flashing_timer = 0;
 }
+
+if (hp <= 0) {
+	instance_destroy();
+}
