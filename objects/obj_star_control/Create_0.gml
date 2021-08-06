@@ -6,5 +6,11 @@ layer_stars2 = layer_create(60);
 timer_max = 3;
 timer = timer_max;
 
-rock_timer_max = 30;
-rock_timer = rock_timer_max;
+var jump_ahead = 512;
+
+for (var i = 0; i < jump_ahead; i++) {
+	event_perform(ev_step, ev_step_normal);
+	with (obj_star) {
+		event_perform(ev_step, ev_step_normal);
+	}
+}
