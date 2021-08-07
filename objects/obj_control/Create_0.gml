@@ -4,7 +4,12 @@ layer = layer_create(-500);
 
 game_over = false;
 
-points = 0;
+points[0] = 0;
+points[1] = 0;
+total_points = 0;
+
+p1_color = make_color_hsv(0, 48, 255);
+p2_color = make_color_hsv(128, 48, 255);
 
 fname = "ufo_save";
 section = "data";

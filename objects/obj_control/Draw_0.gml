@@ -20,7 +20,7 @@ if (game_over) {
 	game_over_text += "\n";
 	game_over_text += "Score";
 	game_over_text += "\n";
-	game_over_text += string(points);
+	game_over_text += string(total_points);
 	game_over_text += "\n";
 	game_over_text += "\n";
 	game_over_text += "Press R to restart";
@@ -30,10 +30,17 @@ if (game_over) {
 	draw_text(room_width / 2, room_height / 2, game_over_text);
 }
 else {
+	draw_text(room_width / 2, 16, string(highscore));
+	
 	if (instance_exists(obj_player1)) {
-		draw_text(32, 16, "HP: " + string(obj_player1.hp));
+		draw_set_halign(fa_left);
+		draw_text(12, 16, string(points[0]));
+		draw_text(12, 32, "HP: " + string(obj_player1.hp));
 	}
 	
-	draw_text(room_width / 2, 16, string(highscore));
-	draw_text(room_width / 2, 32, string(points));
+	if (instance_exists(obj_player2)) {
+		draw_set_halign(fa_right);
+		draw_text(room_width - 12, 16, string(points[1]));
+		draw_text(room_width - 12, 32, "HP: " + string(obj_player2.hp));
+	}
 }
