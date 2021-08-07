@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"obj_rock_splits","path":"objects/obj_rock_splits/obj_rock_splits.yy",},"order":16,},
     {"id":{"name":"obj_star_control","path":"objects/obj_star_control/obj_star_control.yy",},"order":3,},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},"order":16,},
     {"id":{"name":"snd_shoot","path":"sounds/snd_shoot/snd_shoot.yy",},"order":0,},
@@ -13,7 +14,9 @@
     {"id":{"name":"snd_hit","path":"sounds/snd_hit/snd_hit.yy",},"order":1,},
     {"id":{"name":"obj_enemy_control","path":"objects/obj_enemy_control/obj_enemy_control.yy",},"order":13,},
     {"id":{"name":"spr_rock_part","path":"sprites/spr_rock_part/spr_rock_part.yy",},"order":4,},
+    {"id":{"name":"obj_rock_splits_parts","path":"objects/obj_rock_splits_parts/obj_rock_splits_parts.yy",},"order":17,},
     {"id":{"name":"spr_terrain","path":"sprites/spr_terrain/spr_terrain.yy",},"order":5,},
+    {"id":{"name":"spr_rock_splits_parts","path":"sprites/spr_rock_splits_parts/spr_rock_splits_parts.yy",},"order":7,},
     {"id":{"name":"spr_laser","path":"sprites/spr_laser/spr_laser.yy",},"order":2,},
     {"id":{"name":"fnt_title","path":"fonts/fnt_title/fnt_title.yy",},"order":1,},
     {"id":{"name":"obj_rock_part","path":"objects/obj_rock_part/obj_rock_part.yy",},"order":7,},
@@ -23,6 +26,7 @@
     {"id":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},"order":6,},
     {"id":{"name":"obj_points","path":"objects/obj_points/obj_points.yy",},"order":15,},
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},"order":0,},
+    {"id":{"name":"spr_rock_splits","path":"sprites/spr_rock_splits/spr_rock_splits.yy",},"order":6,},
     {"id":{"name":"obj_terrain","path":"objects/obj_terrain/obj_terrain.yy",},"order":9,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":14,},
     {"id":{"name":"obj_player1","path":"objects/obj_player1/obj_player1.yy",},"order":10,},
