@@ -18,6 +18,7 @@
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"order":12,},
     {"id":{"name":"obj_ufo","path":"objects/obj_ufo/obj_ufo.yy",},"order":1,},
     {"id":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},"order":6,},
+    {"id":{"name":"obj_points","path":"objects/obj_points/obj_points.yy",},"order":15,},
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},"order":0,},
     {"id":{"name":"obj_terrain","path":"objects/obj_terrain/obj_terrain.yy",},"order":9,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":14,},
