@@ -15,4 +15,6 @@ else {
 	if (instance_exists(obj_player1)) {
 		draw_text(32, 16, "HP: " + string(obj_player1.hp));
 	}
+	
+	draw_text(room_width / 2, 16, string(points));
 }

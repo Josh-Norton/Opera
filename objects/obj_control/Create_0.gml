@@ -3,3 +3,5 @@
 layer = layer_create(-500);
 
 game_over = false;
+
+points = 0;
