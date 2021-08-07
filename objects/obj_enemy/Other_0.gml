@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (death_sound) {
-	audio_play_sound(snd_break, 0, false);
+if (x < room_width) {
+	death_sound = false;
+	instance_destroy();
 }
