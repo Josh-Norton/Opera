@@ -7,4 +7,12 @@ if (game_over) {
 }
 else if (!instance_exists(obj_ufo)) {
 	game_over = true;
+	
+	if (points > highscore) {
+		highscore = points;
+		
+		ini_open(fname);
+		ini_write_real(section, key, highscore);
+		ini_close();
+	}
 }

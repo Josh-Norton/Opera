@@ -13,6 +13,11 @@ if (game_over) {
 	game_over_text += "GAME OVER"
 	game_over_text += "\n";
 	game_over_text += "\n";
+	game_over_text += "Highscore";
+	game_over_text += "\n";
+	game_over_text += string(highscore);
+	game_over_text += "\n";
+	game_over_text += "\n";
 	game_over_text += "Score";
 	game_over_text += "\n";
 	game_over_text += string(points);
@@ -27,5 +32,6 @@ else {
 		draw_text(32, 16, "HP: " + string(obj_player1.hp));
 	}
 	
-	draw_text(room_width / 2, 16, string(points));
+	draw_text(room_width / 2, 16, string(highscore));
+	draw_text(room_width / 2, 32, string(points));
 }
