@@ -8,8 +8,19 @@ draw_set_halign(1);
 draw_set_valign(1);
 
 if (game_over) {
-	draw_text(room_width / 2, room_height / 2 - 16, "GAME OVER");
-	draw_text(room_width / 2, room_height / 2 + 16, "Press R to restart");
+	var game_over_text = "";
+	
+	game_over_text += "GAME OVER"
+	game_over_text += "\n";
+	game_over_text += "\n";
+	game_over_text += "Score";
+	game_over_text += "\n";
+	game_over_text += string(points);
+	game_over_text += "\n";
+	game_over_text += "\n";
+	game_over_text += "Press R to restart";
+	
+	draw_text(room_width / 2, room_height / 2, game_over_text);
 }
 else {
 	if (instance_exists(obj_player1)) {
