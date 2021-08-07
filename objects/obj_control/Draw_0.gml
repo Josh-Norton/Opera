@@ -24,6 +24,8 @@ if (game_over) {
 	game_over_text += "\n";
 	game_over_text += "\n";
 	game_over_text += "Press R to restart";
+	game_over_text += "\n";
+	game_over_text += "Press Esc to exit";
 	
 	draw_text(room_width / 2, room_height / 2, game_over_text);
 }
