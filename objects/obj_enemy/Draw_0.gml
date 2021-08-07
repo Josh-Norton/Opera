@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-event_inherited();
+if (flash > 0) {
+	shader_set(shad_white);
+}
 
-x -= 4;
+event_user(0);
+
+shader_reset();

@@ -20,6 +20,7 @@
     {"id":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},"order":6,},
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},"order":0,},
     {"id":{"name":"obj_terrain","path":"objects/obj_terrain/obj_terrain.yy",},"order":9,},
+    {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":14,},
     {"id":{"name":"obj_player1","path":"objects/obj_player1/obj_player1.yy",},"order":10,},
     {"id":{"name":"obj_star","path":"objects/obj_star/obj_star.yy",},"order":4,},
     {"id":{"name":"obj_laser","path":"objects/obj_laser/obj_laser.yy",},"order":5,},
