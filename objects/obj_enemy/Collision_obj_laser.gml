@@ -6,13 +6,15 @@ instance_destroy(other);
 
 hp--;
 if (hp <= 0) {
-	var player = other.player;
+	if (!obj_control.game_over) {
+		var player = other.player;
 	
-	obj_control.points[player-1] += points_value;
+		obj_control.points[player-1] += points_value;
 
-	var points = instance_create_layer(x, y, obj_control.layer, obj_points);
-	points.value = points_value;
-	points.player = player;
+		var points = instance_create_layer(x, y, obj_control.layer, obj_points);
+		points.value = points_value;
+		points.player = player;
+	}
 	
 	instance_destroy();
 }

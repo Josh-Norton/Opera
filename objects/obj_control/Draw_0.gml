@@ -10,24 +10,30 @@ draw_set_valign(1);
 if (game_over) {
 	var game_over_text = "";
 	
-	game_over_text += "GAME OVER"
+	game_over_text += "GAME OVER\n"
+	game_over_text += "\n";
+	game_over_text += "Highscore\n";
+	game_over_text += string(highscore) + "\n";
 	game_over_text += "\n";
 	game_over_text += "\n";
-	game_over_text += "Highscore";
-	game_over_text += "\n";
-	game_over_text += string(highscore);
 	game_over_text += "\n";
 	game_over_text += "\n";
-	game_over_text += "Score";
+	game_over_text += "Total Score\n";
+	game_over_text += string(total_points) + "\n";
 	game_over_text += "\n";
-	game_over_text += string(total_points);
-	game_over_text += "\n";
-	game_over_text += "\n";
-	game_over_text += "Press R to restart";
-	game_over_text += "\n";
+	game_over_text += "Press R to restart\n";
 	game_over_text += "Press Esc to exit";
 	
 	draw_text(room_width / 2, room_height / 2, game_over_text);
+	
+	draw_text(room_width / 2 - 80, room_height / 2 - 8, "Player 1 Score\n" + string(points[0]));
+	
+	var p2_score = "-";
+	if (points[1] > 0) {
+		p2_score = string(points[1]);
+	}
+	
+	draw_text(room_width / 2 + 80, room_height / 2 - 8, "Player 2 Score\n" + p2_score);
 }
 else {
 	draw_text(room_width / 2, 16, string(highscore));
