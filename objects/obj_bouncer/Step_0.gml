@@ -5,4 +5,4 @@ event_inherited();
 y_speed += grav;
 
 y += y_speed;
-x -= 2;
+x -= x_speed;
