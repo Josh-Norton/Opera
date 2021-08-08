@@ -6,3 +6,5 @@ y_speed += grav;
 
 y += y_speed;
 x -= x_speed;
+
+bounce_angle += x_speed;

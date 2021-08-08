@@ -11,3 +11,5 @@ x_speed = 2;
 grav = 0.1;
 y_speed = 0;
 bounce_speed = -6.5;
+
+bounce_angle = 0;
