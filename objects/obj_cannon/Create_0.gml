@@ -19,3 +19,4 @@ attack_timer = attack_timer_max;
 
 charge_timer_max = 40;
 charge_timer = charge_timer_max;
+charge_sound = true;
