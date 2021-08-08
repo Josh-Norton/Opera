@@ -7,13 +7,14 @@ ds_list_add(enemy_pool,
 	obj_rock,
 	obj_rock_splits,
 	obj_tank,
+	obj_bouncer,
 	obj_missile
 );
 
 enemy_pool_id = 0;
 
 curr_enemy_pool = ds_list_create();
-ds_list_add(curr_enemy_pool, obj_rock, obj_bouncer);
+ds_list_add(curr_enemy_pool, obj_rock);
 
 timer_max = 120;
 timer = timer_max;
