@@ -3,3 +3,5 @@
 event_inherited();
 
 x -= 4;
+
+image_angle += 4;
