@@ -6,7 +6,7 @@ layer_stars2 = layer_create(60);
 timer_max = 3;
 timer = timer_max;
 
-var jump_ahead = 512;
+var jump_ahead = 1300;
 
 for (var i = 0; i < jump_ahead; i++) {
 	event_perform(ev_step, ev_step_normal);

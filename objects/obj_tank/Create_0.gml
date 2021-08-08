@@ -6,7 +6,7 @@ event_inherited();
 
 hp_max = 3;
 hp = hp_max;
-points_value = 150;
+points_value = 500;
 
 myDirection = 180;
 

@@ -23,3 +23,4 @@ while (width * (scale + 1) < bw && height * (scale + 1) < bh) {
 }
 
 window_set_size(width * scale, height * scale);
+window_set_position(32,64);
