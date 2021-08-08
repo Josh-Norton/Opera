@@ -13,4 +13,4 @@ draw_set_color(c_white);
 
 draw_set_font(fnt_main);
 	
-draw_text(room_width / 2, room_height * (2/3), "Press Space to start");
+draw_text(room_width / 2, room_height * (2/3), "Press Space for 1 Player\nPress Shift for 2 Player");

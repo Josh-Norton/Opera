@@ -2,6 +2,15 @@
 // You can write your code in this editor
 layer = layer_create(-500);
 
+var player_layer = layer_get_id("Instances");
+
+if (obj_global_state.players == 1) {
+	instance_create_layer(32, room_height / 2, player_layer, obj_player1);
+} else {
+	instance_create_layer(32, room_height / 2 - 32, player_layer, obj_player1);
+	instance_create_layer(32, room_height / 2 + 32, player_layer, obj_player2);
+}
+
 game_over = false;
 
 points[0] = 0;
