@@ -7,6 +7,7 @@ ds_list_add(enemy_pool,
 	obj_rock,
 	obj_rock_splits,
 	obj_tank,
+	obj_bouncer,
 	obj_missile
 );
 
