@@ -30,6 +30,7 @@
     {"id":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},"order":1,},
     {"id":{"name":"spr_tank_bullet","path":"sprites/spr_tank_bullet/spr_tank_bullet.yy",},"order":6,},
     {"id":{"name":"obj_points","path":"objects/obj_points/obj_points.yy",},"order":5,},
+    {"id":{"name":"obj_global_state","path":"objects/obj_global_state/obj_global_state.yy",},"order":2,},
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},"order":0,},
     {"id":{"name":"spr_rock_splits","path":"sprites/spr_rock_splits/spr_rock_splits.yy",},"order":3,},
     {"id":{"name":"spr_missile","path":"sprites/spr_missile/spr_missile.yy",},"order":0,},
