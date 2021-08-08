@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"obj_rock_splits","path":"objects/obj_rock_splits/obj_rock_splits.yy",},"order":3,},
+    {"id":{"name":"spr_cannon_part","path":"sprites/spr_cannon_part/spr_cannon_part.yy",},"order":13,},
     {"id":{"name":"obj_star_control","path":"objects/obj_star_control/obj_star_control.yy",},"order":1,},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},"order":1,},
     {"id":{"name":"snd_shoot","path":"sounds/snd_shoot/snd_shoot.yy",},"order":1,},

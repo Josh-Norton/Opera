@@ -14,9 +14,10 @@ target_y = y;
 
 x_speed = 2;
 
-attack_timer_max = 60;
+attack_timer_max = 90;
 attack_timer = attack_timer_max;
 
-charge_timer_max = 40;
+charge_timer_max = 45;
 charge_timer = charge_timer_max;
-charge_sound = true;
+
+can_fire = true;

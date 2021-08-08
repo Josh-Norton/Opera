@@ -25,21 +25,24 @@ if (y < 0) {
 	y_speed = 0.5;
 }
 
-attack_timer--;
-if (attack_timer <= 0) {
-	charge_timer--;
+if (can_fire) {
+	attack_timer--;
+	if (attack_timer <= 0) {
+		charge_timer--;
 	
-	if (charge_timer mod charge_timer_max == charge_timer_max - 1) {
-		audio_play_sound(snd_charge, 0, false);
-	}
+		if (charge_timer mod charge_timer_max == charge_timer_max - 1) {
+			audio_play_sound(snd_charge, 0, false);
+		}
 	
-	if (charge_timer <= 0) {
-		charge_timer = charge_timer_max;
+		if (charge_timer <= 0) {
+			charge_timer = charge_timer_max;
+			attack_timer = attack_timer_max;
 		
-		// attack
-		audio_play_sound(snd_cannon, 0, false);
-		instance_create_layer(x, y, layer, obj_giga_laser);
+			// attack
+			audio_play_sound(snd_cannon, 0, false);
+			instance_create_layer(x, y, layer, obj_giga_laser);
 		
-		attack_timer = attack_timer_max;
+			can_fire = false;
+		}
 	}
 }
