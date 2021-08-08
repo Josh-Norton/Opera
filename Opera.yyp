@@ -40,7 +40,7 @@
     {"id":{"name":"spr_tank","path":"sprites/spr_tank/spr_tank.yy",},"order":5,},
     {"id":{"name":"obj_laser","path":"objects/obj_laser/obj_laser.yy",},"order":0,},
     {"id":{"name":"obj_terrain_generator","path":"objects/obj_terrain_generator/obj_terrain_generator.yy",},"order":1,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},"order":0,},
   ],
   "Options": [
     {"name":"HTML5","path":"options/html5/options_html5.yy",},
@@ -58,7 +58,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
