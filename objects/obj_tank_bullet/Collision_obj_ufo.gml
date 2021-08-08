@@ -4,3 +4,4 @@
 instance_destroy();
 
 effect_create_above(ef_ring, x, y, .01, c_red);
+//comment
