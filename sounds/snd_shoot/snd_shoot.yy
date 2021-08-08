@@ -13,8 +13,8 @@
   "soundFile": "snd_shoot.wav",
   "duration": 0.150023,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_shoot",

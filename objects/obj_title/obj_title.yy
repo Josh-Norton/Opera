@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Title",
+    "path": "folders/Objects/Title.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_title",

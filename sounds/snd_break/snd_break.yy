@@ -13,8 +13,8 @@
   "soundFile": "snd_break.wav",
   "duration": 0.43,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemy",
+    "path": "folders/Sounds/Enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_break",
