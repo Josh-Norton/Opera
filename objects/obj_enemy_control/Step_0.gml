@@ -1,27 +1,36 @@
 /// @description Insert description here
 // You can write your code in this editor
-rock_timer--;
-fire_rock_timer--;
-tank_timer--;
-missile_timer--;
-
-if (rock_timer <= 0) {
-	instance_create_layer(room_width + 32, random(room_height-obj_terrain_generator.height-32), "Instances", obj_rock);
-	rock_timer = rock_timer_max;
+if (start_timer > 0) {
+	start_timer--;
 }
-if (fire_rock_timer <= 0) {
-	instance_create_layer(room_width + 32, random(room_height-obj_terrain_generator.height-32), "Instances", obj_rock_splits);
-	fire_rock_timer = fire_rock_timer_max;
+else {
+	timer -= timer_scale;
+	while (timer <= 0) {
+		var bottom = room_height - obj_terrain_generator.height - 32;
+		var enemy_id = irandom(ds_list_size(curr_enemy_pool) - 1);
+		var enemy = ds_list_find_value(curr_enemy_pool, enemy_id);
+	
+		instance_create_layer(room_width + 32, random(bottom), enemy_layer, enemy);
+	
+		timer += timer_max;
+	}
+
+	diff_timer--;
+	if (diff_timer < 0) {
+		timer_scale += timer_scale_incr;
+		diff_timer = diff_timer_max;
+	}
+
+	pool_timer--;
+	if (pool_timer <= 0) {
+		enemy_pool_id++;
+	
+		if (enemy_pool_id < ds_list_size(enemy_pool)) {
+			var new_enemy = ds_list_find_value(enemy_pool, enemy_pool_id);
+	
+			ds_list_add(curr_enemy_pool, new_enemy);
+		}
+	
+		pool_timer = pool_timer_max;
+	}
 }
-
-
-if (tank_timer <= 0) {
-	instance_create_layer(room_width + 32, room_height-obj_terrain_generator.height-32, "Instances", obj_tank);
-	tank_timer = tank_timer_max;
-}
-
-if (missile_timer <= 0) {
-	instance_create_layer(room_width + 32, random(room_height-obj_terrain_generator.height-32), "Instances", obj_missile);
-	missile_timer = missile_timer_max;
-}
-
