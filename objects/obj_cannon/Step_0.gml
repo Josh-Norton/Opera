@@ -20,6 +20,11 @@ if (abs(y_speed) > y_speed_max) {
 y += y_speed;
 x -= x_speed;
 
+if (y < 0) {
+	y = 0;
+	y_speed = 0.5;
+}
+
 attack_timer--;
 if (attack_timer <= 0) {
 	charge_timer--;

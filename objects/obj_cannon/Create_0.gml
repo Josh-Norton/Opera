@@ -2,9 +2,9 @@
 // You can write your code in this editor
 event_inherited();
 
-hp_max = 8;
+hp_max = 6;
 hp = hp_max;
-points_value = hp_max * 100;
+points_value = 1000;
 
 y_dir = 1;
 y_speed = 0;
