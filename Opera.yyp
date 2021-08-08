@@ -40,6 +40,7 @@
     {"id":{"name":"obj_star","path":"objects/obj_star/obj_star.yy",},"order":0,},
     {"id":{"name":"spr_tank","path":"sprites/spr_tank/spr_tank.yy",},"order":5,},
     {"id":{"name":"obj_laser","path":"objects/obj_laser/obj_laser.yy",},"order":0,},
+    {"id":{"name":"obj_enemy_projectile_parent","path":"objects/obj_enemy_projectile_parent/obj_enemy_projectile_parent.yy",},"order":9,},
     {"id":{"name":"obj_terrain_generator","path":"objects/obj_terrain_generator/obj_terrain_generator.yy",},"order":1,},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},"order":0,},
   ],
