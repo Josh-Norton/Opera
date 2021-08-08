@@ -15,12 +15,18 @@ if (browser) {
 }
 else {
 	bw = display_get_width();
-	bh = display_get_width();
+	bh = display_get_height();
 }
 
 while (width * (scale + 1) < bw && height * (scale + 1) < bh) {
 	scale++;
 }
 
-window_set_size(width * scale, height * scale);
-window_set_position(32,64);
+var new_width = width * scale;
+var new_height = height * scale;
+
+window_set_size(new_width, new_height);
+
+if (!browser) {
+	window_set_position(bw / 2 - new_width / 2, bh / 2 - new_height / 2);
+}
