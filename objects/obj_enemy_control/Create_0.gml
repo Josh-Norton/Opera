@@ -6,12 +6,14 @@ enemy_layer = layer_create(10);
 
 enemy_pool = ds_list_create();
 ds_list_add(enemy_pool,
-	obj_rock,
+    obj_rock,
 	obj_rock_splits,
 	obj_tank,
 	obj_bouncer,
 	obj_missile,
-	obj_cannon
+	obj_cannon,
+	obj_enemy_ufo
+	
 );
 
 enemy_pool_id = 0;
