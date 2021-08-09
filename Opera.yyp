@@ -50,7 +50,6 @@
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":7,},
     {"id":{"name":"obj_player1","path":"objects/obj_player1/obj_player1.yy",},"order":1,},
     {"id":{"name":"obj_giga_laser","path":"objects/obj_giga_laser/obj_giga_laser.yy",},"order":12,},
-    {"id":{"name":"obj_star","path":"objects/obj_star/obj_star.yy",},"order":0,},
     {"id":{"name":"spr_tank","path":"sprites/spr_tank/spr_tank.yy",},"order":5,},
     {"id":{"name":"obj_laser","path":"objects/obj_laser/obj_laser.yy",},"order":0,},
     {"id":{"name":"obj_enemy_projectile_parent","path":"objects/obj_enemy_projectile_parent/obj_enemy_projectile_parent.yy",},"order":9,},
