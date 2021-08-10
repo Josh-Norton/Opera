@@ -9,3 +9,7 @@ x_speed = lengthdir_x(spd, dir);
 y_speed = lengthdir_y(spd, dir);
 
 grav = 0.25;
+
+if (x < 0) {
+	instance_destroy();
+}
