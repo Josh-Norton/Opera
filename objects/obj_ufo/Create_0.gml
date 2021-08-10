@@ -2,7 +2,7 @@
 // You can write your code in this editor
 event_user(0);
 
-hp = 20;
+hp = 3;
 
 x_speed = 8;
 y_speed = 0;
