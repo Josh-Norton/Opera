@@ -10,15 +10,18 @@ if (game_over) {
 	}
 }
 else if (!instance_exists(obj_ufo)) {
-	game_over = true;
+	game_over_timer--;
+	if (game_over_timer <= 0) {
+		game_over = true;
 	
-	total_points = points[0] + points[1];
+		total_points = points[0] + points[1];
 	
-	if (total_points > highscore) {
-		highscore = total_points;
+		if (total_points > highscore) {
+			highscore = total_points;
 		
-		ini_open(fname);
-		ini_write_real(section, key, highscore);
-		ini_close();
+			ini_open(fname);
+			ini_write_real(section, key, highscore);
+			ini_close();
+		}
 	}
 }

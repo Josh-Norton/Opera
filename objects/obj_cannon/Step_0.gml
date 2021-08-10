@@ -25,7 +25,7 @@ if (y < 0) {
 	y_speed = 0.5;
 }
 
-if (can_fire) {
+if (can_fire && instance_exists(obj_ufo)) {
 	attack_timer--;
 	if (attack_timer <= 0) {
 		charge_timer--;

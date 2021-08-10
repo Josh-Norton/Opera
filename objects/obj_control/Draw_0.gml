@@ -1,13 +1,25 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_set_color(c_white);
-
 draw_set_font(fnt_main);
 	
 draw_set_halign(1);
 draw_set_valign(1);
 
 if (game_over) {
+	draw_set_color(c_black);
+	draw_set_alpha(0.5);
+	
+	draw_rectangle(
+		room_width / 2 - game_over_width / 2, 
+		room_height / 2 - game_over_height / 2, 
+		room_width / 2 + game_over_width / 2, 
+		room_height / 2 + game_over_height / 2, 
+		false
+	);
+	
+	draw_set_color(c_white);
+	draw_set_alpha(1);
+	
 	var game_over_text = "";
 	
 	game_over_text += "GAME OVER\n"
@@ -36,6 +48,8 @@ if (game_over) {
 	draw_text(room_width / 2 + 80, room_height / 2 - 8, "Player 2 Score\n" + p2_score);
 }
 else {
+	draw_set_color(c_white);
+	
 	draw_text(room_width / 2, 16, string(highscore));
 	
 	if (instance_exists(obj_player1)) {
