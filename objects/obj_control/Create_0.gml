@@ -14,6 +14,11 @@ if (obj_global_state.players == 1) {
 game_over = false;
 game_over_timer = 90;
 
+game_over_step_max = 5;
+game_over_step = 1;
+game_over_timer2_max = 30;
+game_over_timer2 = game_over_timer2_max;
+
 game_over_width = 320;
 game_over_height = 224;
 

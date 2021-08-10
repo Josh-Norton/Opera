@@ -20,7 +20,15 @@ if (game_over) {
 	draw_set_color(c_white);
 	draw_set_alpha(1);
 	
-	var game_over_text = "";
+	draw_rectangle(
+		room_width / 2 - game_over_width / 2, 
+		room_height / 2 - game_over_height / 2, 
+		room_width / 2 + game_over_width / 2, 
+		room_height / 2 + game_over_height / 2, 
+		true
+	);
+	
+	/*var game_over_text = "";
 	
 	game_over_text += "GAME OVER\n"
 	game_over_text += "\n";
@@ -45,7 +53,46 @@ if (game_over) {
 		p2_score = string(points[1]);
 	}
 	
-	draw_text(room_width / 2 + 80, room_height / 2 - 8, "Player 2 Score\n" + p2_score);
+	draw_text(room_width / 2 + 80, room_height / 2 - 8, "Player 2 Score\n" + p2_score);*/
+	
+	//draw_set_color(c_red);
+		
+	var game_over_x = room_width / 2;
+	var game_over_y = room_height / 2 - (20 * 9) / 2;
+	
+	if (game_over_step > 0) {
+		draw_text(game_over_x, game_over_y, "GAME OVER");
+	}
+		
+	if (game_over_step > 1) {
+		game_over_y += 4*9;
+			
+		draw_text(game_over_x, game_over_y, "Highscore\n" + string(highscore));
+	}
+	
+	if (game_over_step > 2) {
+		game_over_y += 45;
+	
+		var p2_score = "-";
+		if (points[1] > 0) {
+			p2_score = string(points[1]);
+		}
+	
+		draw_text(game_over_x - 80, game_over_y, "Player 1 Score\n" + string(points[0]));
+		draw_text(game_over_x + 80, game_over_y, "Player 2 Score\n" + p2_score);
+	}
+	
+	if (game_over_step > 3) {
+		game_over_y += 45;
+	
+		draw_text(game_over_x, game_over_y, "Total Score\n" + string(total_points));
+	}
+			
+	if (game_over_step > 4) {
+		game_over_y += 45;
+	
+		draw_text(game_over_x, game_over_y, "Press R to restart\nPress Esc to exit");
+	}
 }
 else {
 	draw_set_color(c_white);

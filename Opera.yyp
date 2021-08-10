@@ -54,6 +54,7 @@
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},"order":0,},
     {"id":{"name":"spr_rock_splits","path":"sprites/spr_rock_splits/spr_rock_splits.yy",},"order":3,},
     {"id":{"name":"spr_missile","path":"sprites/spr_missile/spr_missile.yy",},"order":0,},
+    {"id":{"name":"snd_text","path":"sounds/snd_text/snd_text.yy",},"order":3,},
     {"id":{"name":"obj_terrain","path":"objects/obj_terrain/obj_terrain.yy",},"order":0,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":7,},
     {"id":{"name":"spr_enemy_ufo","path":"sprites/spr_enemy_ufo/spr_enemy_ufo.yy",},"order":14,},
