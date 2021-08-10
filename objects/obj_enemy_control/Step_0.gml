@@ -15,22 +15,24 @@ else {
 		timer += timer_max;
 	}
 
-	diff_timer--;
-	if (diff_timer < 0) {
-		timer_scale += timer_scale_incr;
-		diff_timer = diff_timer_max;
-	}
-
-	pool_timer--;
-	if (pool_timer <= 0) {
-		enemy_pool_id++;
-	
-		if (enemy_pool_id < ds_list_size(enemy_pool)) {
-			var new_enemy = ds_list_find_value(enemy_pool, enemy_pool_id);
-	
-			ds_list_add(curr_enemy_pool, new_enemy);
+	if (!obj_control.game_over) {
+		diff_timer--;
+		if (diff_timer < 0) {
+			timer_scale += timer_scale_incr;
+			diff_timer = diff_timer_max;
 		}
+
+		pool_timer--;
+		if (pool_timer <= 0) {
+			enemy_pool_id++;
 	
-		pool_timer = pool_timer_max;
+			if (enemy_pool_id < ds_list_size(enemy_pool)) {
+				var new_enemy = ds_list_find_value(enemy_pool, enemy_pool_id);
+	
+				ds_list_add(curr_enemy_pool, new_enemy);
+			}
+	
+			pool_timer = pool_timer_max;
+		}
 	}
 }
