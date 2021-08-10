@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-width -= 1.5;
-if (width <= 0) {
-	instance_destroy();
-}
+dir = random(360);
+spd = random_range(1, 3);
+alpha = 3;
