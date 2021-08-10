@@ -2,7 +2,7 @@
 // You can write your code in this editor
 event_user(0);
 
-hp = 20;
+hp = 2;
 
 x_speed = 8;
 y_speed = 0;
@@ -16,3 +16,6 @@ flash_timer = flash_timer_max;
 
 flashing_timer_max = 120;
 flashing_timer = 0;
+
+
+rescue = 0;

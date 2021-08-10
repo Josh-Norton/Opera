@@ -4,13 +4,16 @@ if (start_timer > 0) {
 	start_timer--;
 }
 else {
+	var bottom = room_height - obj_terrain_generator.height - 32;
+	
 	if(instance_exists(obj_enemy_boss_super_tank)){
 		return;
 	}
 	boss_timer --;
+	
+
 	timer -= timer_scale;
 	while (timer <= 0) {
-		var bottom = room_height - obj_terrain_generator.height - 32;
 		var enemy_id = irandom(ds_list_size(curr_enemy_pool) - 1);
 		var enemy = ds_list_find_value(curr_enemy_pool, enemy_id);
 	
@@ -42,4 +45,11 @@ else {
 		
 	}
 	
+
+	goody_timer -= 1;
+	if ( goody_timer == 0 ){
+		goody_timer = max_goody;
+			instance_create_layer(room_width + 32, room_height, enemy_layer, obj_person);
+	
+	}
 }

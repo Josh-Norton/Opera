@@ -14,7 +14,6 @@ ds_list_add(enemy_pool,
 	obj_missile,
 	obj_cannon,
 	obj_enemy_ufo
-	
 );
 
 ds_list_add(enemy_boss_pool,
@@ -41,4 +40,14 @@ pool_timer = pool_timer_max;
 start_timer_max = 3 * 60;
 start_timer = start_timer_max;
 
+
 boss_timer = 20 * 60
+
+goody_pool = ds_list_create();
+ds_list_add(goody_pool,
+    obj_person
+);
+
+max_goody = 120;
+goody_timer = 10;
+
