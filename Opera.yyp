@@ -42,6 +42,7 @@
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"order":4,},
     {"id":{"name":"obj_ufo","path":"objects/obj_ufo/obj_ufo.yy",},"order":3,},
     {"id":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},"order":1,},
+    {"id":{"name":"spr_boss_tank","path":"sprites/spr_boss_tank/spr_boss_tank.yy",},"order":17,},
     {"id":{"name":"spr_tank_bullet","path":"sprites/spr_tank_bullet/spr_tank_bullet.yy",},"order":6,},
     {"id":{"name":"obj_points","path":"objects/obj_points/obj_points.yy",},"order":5,},
     {"id":{"name":"spr_metal_part","path":"sprites/spr_metal_part/spr_metal_part.yy",},"order":10,},
