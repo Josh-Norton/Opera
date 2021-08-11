@@ -67,7 +67,7 @@ if (game_over) {
 	}
 			
 	if (game_over_step > 4) {
-		draw_text(game_over_x, game_over_y + 10 * line_height, "Press R to restart\nPress Esc to exit");
+		draw_text(game_over_x, game_over_y + 10 * line_height, "Press <up> to restart\nPress Esc to exit");
 	}
 }
 else {
@@ -99,5 +99,10 @@ else {
 		for (var i = 0; i < obj_player2.hp; i++) {
 			draw_sprite_ext(spr_ufo, 1, x_pos -left + spacing * i, 32, 0.5, 0.5, 0, c_white, 1);
 		}
+	}
+	
+	if ( obj_global_state.players == 1 ) { 
+		draw_set_halign(fa_right);
+		draw_text(room_width - 12, 16, "Press 'W' for Player 2");
 	}
 }
