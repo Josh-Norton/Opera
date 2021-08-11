@@ -12,6 +12,15 @@ if (obj_global_state.players == 1) {
 }
 
 game_over = false;
+game_over_timer = 90;
+
+game_over_step_max = 5;
+game_over_step = 1;
+game_over_timer2_max = 30;
+game_over_timer2 = game_over_timer2_max;
+
+game_over_width = 320;
+game_over_height = 224;
 
 points[0] = 0;
 points[1] = 0;
@@ -27,3 +36,9 @@ key = "highscore";
 ini_open(fname);
 highscore = ini_read_real(section, key, 0);
 ini_close();
+
+flash_highscore = false;
+
+hf = true;
+hf_timer_max = 10;
+hf_timer = hf_timer_max;
