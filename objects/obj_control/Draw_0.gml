@@ -76,14 +76,28 @@ else {
 	draw_text(room_width / 2, 16, string(highscore));
 	
 	if (instance_exists(obj_player1)) {
-		draw_set_halign(fa_left);
-		draw_text(12, 16, string(points[0]));
-		draw_text(12, 32, "HP: " + string(obj_player1.hp));
+		var x_pos = room_width * (1/4);
+		
+		draw_text(x_pos, 16, string(points[0]));
+		
+		var spacing = 16;
+		var left = (spacing * (obj_player1.hp-1)) / 2;
+		
+		for (var i = 0; i < obj_player1.hp; i++) {
+			draw_sprite_ext(spr_ufo, 0, x_pos -left + spacing * i, 32, 0.5, 0.5, 0, c_white, 1);
+		}
 	}
 	
 	if (instance_exists(obj_player2)) {
-		draw_set_halign(fa_right);
-		draw_text(room_width - 12, 16, string(points[1]));
-		draw_text(room_width - 12, 32, "HP: " + string(obj_player2.hp));
+		var x_pos = room_width * (3/4);
+		
+		draw_text(x_pos, 16, string(points[1]));
+		
+		var spacing = 16;
+		var left = (spacing * (obj_player2.hp-1)) / 2;
+		
+		for (var i = 0; i < obj_player2.hp; i++) {
+			draw_sprite_ext(spr_ufo, 1, x_pos -left + spacing * i, 32, 0.5, 0.5, 0, c_white, 1);
+		}
 	}
 }
