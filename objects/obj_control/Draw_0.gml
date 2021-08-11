@@ -27,69 +27,53 @@ if (game_over) {
 		room_height / 2 + game_over_height / 2, 
 		true
 	);
-	
-	/*var game_over_text = "";
-	
-	game_over_text += "GAME OVER\n"
-	game_over_text += "\n";
-	game_over_text += "Highscore\n";
-	game_over_text += string(highscore) + "\n";
-	game_over_text += "\n";
-	game_over_text += "\n";
-	game_over_text += "\n";
-	game_over_text += "\n";
-	game_over_text += "Total Score\n";
-	game_over_text += string(total_points) + "\n";
-	game_over_text += "\n";
-	game_over_text += "Press R to restart\n";
-	game_over_text += "Press Esc to exit";
-	
-	draw_text(room_width / 2, room_height / 2, game_over_text);
-	
-	draw_text(room_width / 2 - 80, room_height / 2 - 8, "Player 1 Score\n" + string(points[0]));
-	
-	var p2_score = "-";
-	if (points[1] > 0) {
-		p2_score = string(points[1]);
-	}
-	
-	draw_text(room_width / 2 + 80, room_height / 2 - 8, "Player 2 Score\n" + p2_score);*/
-	
-	//draw_set_color(c_red);
+		
+	var line_height = 9;
 		
 	var game_over_x = room_width / 2;
-	var game_over_y = room_height / 2 - (20 * 9) / 2;
+	var game_over_y = room_height / 2 - (19 * line_height) / 2;
 	
 	if (game_over_step > 0) {
 		draw_text(game_over_x, game_over_y, "GAME OVER");
 	}
 		
 	if (game_over_step > 1) {
-		game_over_y += 4*9;
+		game_over_y += 4*line_height;
+		
+		var hscore = " ";
+		if (!flash_highscore || hf) {
+			hscore = string(highscore)
+		}
 			
-		draw_text(game_over_x, game_over_y, "Highscore\n" + string(highscore));
+		draw_text(game_over_x, game_over_y, "Highscore\n" + hscore);
 	}
 	
 	if (game_over_step > 2) {
-		game_over_y += 45;
-	
+		game_over_y += 5 * line_height;
+		
+		draw_text(game_over_x - 80, game_over_y, "Player 1 Score\n" + string(points[0]));
+
 		var p2_score = "-";
 		if (points[1] > 0) {
 			p2_score = string(points[1]);
 		}
-	
-		draw_text(game_over_x - 80, game_over_y, "Player 1 Score\n" + string(points[0]));
+
 		draw_text(game_over_x + 80, game_over_y, "Player 2 Score\n" + p2_score);
 	}
 	
 	if (game_over_step > 3) {
-		game_over_y += 45;
+		game_over_y += 5 * line_height;
+		
+		var tscore = " ";
+		if (!flash_highscore || hf) {
+			tscore = string(total_points)
+		}
 	
-		draw_text(game_over_x, game_over_y, "Total Score\n" + string(total_points));
+		draw_text(game_over_x, game_over_y, "Total Score\n" + tscore);
 	}
 			
 	if (game_over_step > 4) {
-		game_over_y += 45;
+		game_over_y += 5 * line_height;
 	
 		draw_text(game_over_x, game_over_y, "Press R to restart\nPress Esc to exit");
 	}

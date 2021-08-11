@@ -36,3 +36,9 @@ key = "highscore";
 ini_open(fname);
 highscore = ini_read_real(section, key, 0);
 ini_close();
+
+flash_highscore = false;
+
+hf = true;
+hf_timer_max = 10;
+hf_timer = hf_timer_max;

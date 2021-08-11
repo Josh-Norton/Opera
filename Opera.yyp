@@ -40,6 +40,7 @@
     {"id":{"name":"spr_bouncer_back","path":"sprites/spr_bouncer_back/spr_bouncer_back.yy",},"order":8,},
     {"id":{"name":"spr_giga_laser","path":"sprites/spr_giga_laser/spr_giga_laser.yy",},"order":12,},
     {"id":{"name":"snd_die","path":"sounds/snd_die/snd_die.yy",},"order":2,},
+    {"id":{"name":"snd_highscore","path":"sounds/snd_highscore/snd_highscore.yy",},"order":4,},
     {"id":{"name":"spr_rock","path":"sprites/spr_rock/spr_rock.yy",},"order":1,},
     {"id":{"name":"obj_bouncer","path":"objects/obj_bouncer/obj_bouncer.yy",},"order":10,},
     {"id":{"name":"spr_enemy_ufo_bullet","path":"sprites/spr_enemy_ufo_bullet/spr_enemy_ufo_bullet.yy",},"order":15,},

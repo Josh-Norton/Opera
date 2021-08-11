@@ -5,8 +5,8 @@ if (browser) {
 	new_bh = browser_height;
 }
 else {
-	new_bw = display_get_width();
-	new_bh = display_get_width();
+	new_bw = 512;//display_get_width();
+	new_bh = 288;//display_get_width();
 }
 
 if (bh != new_bh || bw != new_bw) {
