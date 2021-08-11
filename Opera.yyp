@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"obj_shield","path":"objects/obj_shield/obj_shield.yy",},"order":1,},
     {"id":{"name":"obj_rock_splits","path":"objects/obj_rock_splits/obj_rock_splits.yy",},"order":3,},
     {"id":{"name":"spr_cannon_part","path":"sprites/spr_cannon_part/spr_cannon_part.yy",},"order":13,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":3,},
@@ -75,6 +76,7 @@
     {"id":{"name":"bg_bldg_back","path":"sprites/bg_bldg_back/bg_bldg_back.yy",},"order":10,},
     {"id":{"name":"spr_enemy_ufo","path":"sprites/spr_enemy_ufo/spr_enemy_ufo.yy",},"order":14,},
     {"id":{"name":"obj_player1","path":"objects/obj_player1/obj_player1.yy",},"order":1,},
+    {"id":{"name":"spr_shield","path":"sprites/spr_shield/spr_shield.yy",},"order":1,},
     {"id":{"name":"obj_giga_laser","path":"objects/obj_giga_laser/obj_giga_laser.yy",},"order":12,},
     {"id":{"name":"spr_tank","path":"sprites/spr_tank/spr_tank.yy",},"order":5,},
     {"id":{"name":"obj_enemy_ufo","path":"objects/obj_enemy_ufo/obj_enemy_ufo.yy",},"order":13,},
