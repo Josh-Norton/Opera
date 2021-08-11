@@ -17,7 +17,7 @@ if (hp <= 0) {
 	}
 	
 	if (instance_exists(obj_ufo)) {
-		var max_chance = obj_ufo.hp_max * obj_global_state.players;
+		var max_chance = obj_ufo.hp_max;
 		var chance = max_chance;
 	
 		chance -= instance_number(obj_health);
