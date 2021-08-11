@@ -61,4 +61,13 @@ else {
 		power_up_timer = max_power_up_timer;
 		instance_create_layer(room_width + 32, random(bottom), enemy_layer, obj_health);
 	}
+	
+	shield_timer -= 1;
+
+	if(shield_timer ==0){
+		shield_timer = max_shield_timer;
+		instance_create_layer(room_width + 32, random(bottom), enemy_layer, obj_shield);
+	}
+	
+	
 }

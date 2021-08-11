@@ -59,3 +59,9 @@ if (flashing_timer <= 0) {
 if (hp <= 0) {
 	instance_destroy();
 }
+
+
+shield_timer -= 1;
+if(shield_activated==true && shield_timer <= 0){
+	shield_activated = false;
+}
