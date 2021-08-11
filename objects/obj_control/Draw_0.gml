@@ -67,7 +67,7 @@ if (game_over) {
 	}
 			
 	if (game_over_step > 4) {
-		draw_text(game_over_x, game_over_y + 10 * line_height, "Press R to restart\nPress Esc to exit");
+		draw_text(game_over_x, game_over_y + 10 * line_height, "Press <up> to restart\nPress Esc to exit");
 	}
 }
 else {
@@ -85,5 +85,10 @@ else {
 		draw_set_halign(fa_right);
 		draw_text(room_width - 12, 16, string(points[1]));
 		draw_text(room_width - 12, 32, "HP: " + string(obj_player2.hp));
+	}
+	
+	if ( obj_global_state.players == 1 ) { 
+		draw_set_halign(fa_right);
+		draw_text(room_width - 12, 16, "Press 'W' for Player 2");
 	}
 }

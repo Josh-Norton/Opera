@@ -1,5 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
+var player_layer = layer_get_id("Instances");
+
+if ( obj_global_state.players == 1) {
+
+	if (keyboard_check(ord("W"))) {
+		obj_global_state.players = 2;
+		instance_create_layer(32, room_height / 2 + 32, player_layer, obj_player2);
+	}
+}
+
 if (keyboard_check(vk_escape)) {
 	room_goto(rm_title);
 }
@@ -36,7 +46,8 @@ if (game_over) {
 	}
 	else {
 		
-		if (keyboard_check(ord("R"))) {
+		if (keyboard_check(ord("R")) || keyboard_check(vk_up) || mouse_check_button_pressed(mb_left) ) {
+			obj_global_state.players = 1;
 			room_restart();
 		}
 	}
