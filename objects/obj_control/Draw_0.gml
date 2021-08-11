@@ -2,8 +2,8 @@
 // You can write your code in this editor
 draw_set_font(fnt_main);
 	
-draw_set_halign(1);
-draw_set_valign(1);
+draw_set_halign(fa_center);
+draw_set_valign(fa_center);
 
 if (game_over) {
 	draw_set_color(c_black);
@@ -31,26 +31,22 @@ if (game_over) {
 	var line_height = 9;
 		
 	var game_over_x = room_width / 2;
-	var game_over_y = room_height / 2 - (19 * line_height) / 2;
+	var game_over_y = room_height / 2;
 	
 	if (game_over_step > 0) {
-		draw_text(game_over_x, game_over_y, "GAME OVER");
+		draw_text(game_over_x, game_over_y - 10 * line_height, "GAME OVER");
 	}
 		
-	if (game_over_step > 1) {
-		game_over_y += 4*line_height;
-		
+	if (game_over_step > 1) {	
 		var hscore = " ";
 		if (!flash_highscore || hf) {
 			hscore = string(highscore)
 		}
 			
-		draw_text(game_over_x, game_over_y, "Highscore\n" + hscore);
+		draw_text(game_over_x, game_over_y - 5 * line_height, "Highscore\n" + hscore);
 	}
 	
-	if (game_over_step > 2) {
-		game_over_y += 5 * line_height;
-		
+	if (game_over_step > 2) {		
 		draw_text(game_over_x - 80, game_over_y, "Player 1 Score\n" + string(points[0]));
 
 		var p2_score = "-";
@@ -61,21 +57,17 @@ if (game_over) {
 		draw_text(game_over_x + 80, game_over_y, "Player 2 Score\n" + p2_score);
 	}
 	
-	if (game_over_step > 3) {
-		game_over_y += 5 * line_height;
-		
+	if (game_over_step > 3) {		
 		var tscore = " ";
 		if (!flash_highscore || hf) {
 			tscore = string(total_points)
 		}
 	
-		draw_text(game_over_x, game_over_y, "Total Score\n" + tscore);
+		draw_text(game_over_x, game_over_y + 5 * line_height, "Total Score\n" + tscore);
 	}
 			
 	if (game_over_step > 4) {
-		game_over_y += 5 * line_height;
-	
-		draw_text(game_over_x, game_over_y, "Press R to restart\nPress Esc to exit");
+		draw_text(game_over_x, game_over_y + 10 * line_height, "Press R to restart\nPress Esc to exit");
 	}
 }
 else {
