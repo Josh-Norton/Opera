@@ -1,13 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-layer_stars = layer_create(50);
 
 var p_dir = 180;
-var p_chance = -20;
-var p1_speed = 1/4;
-var p2_speed = 1/8;
-var p1_alpha = 0.5;
-var p2_alpha = 0.25;
+
+layer_stars = layer;
+
+var p_chance = -200;
+var p1_speed = 0.05;
+var p2_speed = 0.025;
+var p1_alpha = 0.8;
+var p2_alpha = 0.5;
 
 ps = part_system_create();
 
@@ -17,7 +19,7 @@ pt1 = part_type_create();
 
 part_type_speed(pt1, p1_speed, p1_speed, 0, 0);
 part_type_direction(pt1, p_dir, p_dir, 0, 0);
-part_type_life(pt1, room_width / p2_speed, room_width / p2_speed);
+part_type_life(pt1, room_width / p1_speed, room_width / p1_speed);
 part_type_alpha1(pt1, p1_alpha);
 
 pt2 = part_type_create();
