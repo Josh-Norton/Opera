@@ -41,7 +41,20 @@ if (laser_timer <= 0 && shoot_button) {
 	laser.dir = dir;
 	laser.player = player;
 	
+	if (triple) {
+		laser = instance_create_layer(x + ldx, y + ldy, "Instances", obj_laser);
+		laser.dir = dir - 15;
+		laser.player = player;
+		
+		laser = instance_create_layer(x + ldx, y + ldy, "Instances", obj_laser);
+		laser.dir = dir + 15;
+		laser.player = player;
+	}
+	
 	laser_timer = laser_timer_max;
+	if (rapid) {
+		laser_timer /= 2;
+	}
 }
 
 flash_timer--;
@@ -62,6 +75,8 @@ if (hp <= 0) {
 
 
 shield_timer -= 1;
-if(shield_activated==true && shield_timer <= 0){
+if(shield_timer <= 0){
 	shield_activated = false;
+	rapid = false;
+	triple = false;
 }
