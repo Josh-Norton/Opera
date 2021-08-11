@@ -67,5 +67,11 @@ else {
 		instance_create_layer(room_width + 32, random(bottom), enemy_layer, obj_shield);
 	}
 	
+	rapid_fire_timer -=1;
+	if(rapid_fire_timer ==0){
+		rapid_fire_timer = max_rapid_fire_timer;
+		instance_create_layer(room_width + 32, random(bottom), enemy_layer, obj_rapid_fire);
+	}
+	
 	
 }

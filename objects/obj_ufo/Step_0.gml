@@ -65,3 +65,9 @@ shield_timer -= 1;
 if(shield_activated==true && shield_timer <= 0){
 	shield_activated = false;
 }
+
+rapid_fire_timer -= 1;
+if(rapid_fire_activated==true && rapid_fire_timer <= 0){
+	rapid_fire_activated = false;
+	laser_timer_max = 10;
+}

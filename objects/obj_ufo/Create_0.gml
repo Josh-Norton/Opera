@@ -24,3 +24,7 @@ rescue = 0;
 shield_activated = false;
 
 shield_timer = 20;
+
+rapid_fire_activated = false;
+
+rapid_fire_timer = 60;
