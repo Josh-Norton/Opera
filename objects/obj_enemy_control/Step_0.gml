@@ -52,6 +52,13 @@ else {
 	if ( goody_timer == 0 ){
 		goody_timer = max_goody;
 			instance_create_layer(room_width + 32, room_height, enemy_layer, obj_person);
+			
 	
+	}
+	
+	power_up_timer -= 1;
+	if(power_up_timer == 0){
+		power_up_timer = max_power_up_timer;
+		instance_create_layer(room_width + 32, random(bottom), enemy_layer, obj_health);
 	}
 }
