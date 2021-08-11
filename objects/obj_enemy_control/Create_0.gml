@@ -50,4 +50,6 @@ ds_list_add(goody_pool,
 
 max_goody = 120;
 goody_timer = 10;
+power_up_timer = 20;
+max_power_up_timer = 200;
 
