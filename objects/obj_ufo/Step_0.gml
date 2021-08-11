@@ -21,9 +21,11 @@ if (x > room_width) {
 }
 if (y < 0) {
 	y = 0;
+	y_speed = 2;
 }
 if (y > room_height) {
 	y = room_height;
+	y_speed = -4;
 }
 
 laser_timer--;

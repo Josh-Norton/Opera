@@ -5,6 +5,7 @@ randomise();
 enemy_layer = layer_create(10);
 
 enemy_pool = ds_list_create();
+enemy_boss_pool = ds_list_create();
 ds_list_add(enemy_pool,
     obj_rock,
 	obj_rock_splits,
@@ -13,8 +14,10 @@ ds_list_add(enemy_pool,
 	obj_missile,
 	obj_cannon,
 	obj_enemy_ufo
-	
 );
+
+ds_list_add(enemy_boss_pool,
+obj_enemy_boss_super_tank)
 
 enemy_pool_id = 0;
 
@@ -36,3 +39,15 @@ pool_timer = pool_timer_max;
 // Give 3 seconds before enemies start spawning
 start_timer_max = 3 * 60;
 start_timer = start_timer_max;
+
+
+boss_timer = 20 * 60
+
+goody_pool = ds_list_create();
+ds_list_add(goody_pool,
+    obj_person
+);
+
+max_goody = 120;
+goody_timer = 10;
+
