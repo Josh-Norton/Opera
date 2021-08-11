@@ -2,6 +2,7 @@
 // You can write your code in this editor
 flash = 0;
 death_sound = true;
+hp_chance_max = 0.5;
 
 // Set this up in the child object:
 

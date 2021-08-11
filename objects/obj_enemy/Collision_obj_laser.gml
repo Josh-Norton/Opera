@@ -16,6 +16,24 @@ if (hp <= 0) {
 		points.player = player;
 	}
 	
+	var max_chance = obj_ufo.hp_max * obj_global_state.players;
+	var chance = max_chance;
+	
+	chance -= instance_number(obj_health);
+	
+	if (instance_exists(obj_player1)) {
+		chance -= obj_player1.hp;
+	}
+	if (instance_exists(obj_player2)) {
+		chance -= obj_player2.hp;
+	}
+	
+	chance /= max_chance;
+	
+	if (random(1) < (hp_chance_max * chance)) {
+		instance_create_layer(x, y, layer, obj_health);
+	}
+	
 	instance_destroy();
 }
 
