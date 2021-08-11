@@ -46,7 +46,6 @@ else {
 		instance_create_layer(room_width + 32, random(room_height - obj_terrain_generator.height - 32), enemy_layer, obj_enemy_boss_super_tank);
 		
 	}
-	
 
 	goody_timer -= 1;
 	if ( goody_timer == 0 ){
@@ -59,6 +58,5 @@ else {
 	power_up_timer -= 1;
 	if(power_up_timer == 0){
 		power_up_timer = max_power_up_timer;
-		instance_create_layer(room_width + 32, random(bottom), enemy_layer, obj_health);
 	}
 }
