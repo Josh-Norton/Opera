@@ -20,3 +20,7 @@ flashing_timer = 0;
 
 
 rescue = 0;
+
+shield_activated = false;
+
+shield_timer = 20;

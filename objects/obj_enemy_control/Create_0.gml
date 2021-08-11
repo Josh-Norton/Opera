@@ -54,7 +54,7 @@ power_up_timer = 20;
 max_power_up_timer = 200;
 shield_timer = 20;
 max_shield_timer = 200;
-shield_activated = false;
+
 
 
 
