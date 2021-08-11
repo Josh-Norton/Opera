@@ -65,6 +65,7 @@
     {"id":{"name":"spr_metal_part","path":"sprites/spr_metal_part/spr_metal_part.yy",},"order":10,},
     {"id":{"name":"obj_global_state","path":"objects/obj_global_state/obj_global_state.yy",},"order":2,},
     {"id":{"name":"spr_health","path":"sprites/spr_health/spr_health.yy",},"order":0,},
+    {"id":{"name":"snd_powerup","path":"sounds/snd_powerup/snd_powerup.yy",},"order":5,},
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},"order":0,},
     {"id":{"name":"spr_rock_splits","path":"sprites/spr_rock_splits/spr_rock_splits.yy",},"order":3,},
     {"id":{"name":"spr_missile","path":"sprites/spr_missile/spr_missile.yy",},"order":0,},
