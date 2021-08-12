@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 1,
-  "bbox_right": 6,
-  "bbox_top": 1,
-  "bbox_bottom": 6,
+  "bbox_left": 0,
+  "bbox_right": 7,
+  "bbox_top": 0,
+  "bbox_bottom": 7,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"983411ed-1fe1-4a6c-8314-fe460c916ae0","path":"sprites/spr_rock_part/spr_rock_part.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"983411ed-1fe1-4a6c-8314-fe460c916ae0","path":"sprites/spr_rock_part/spr_rock_part.yy",},"LayerId":{"name":"079d4c5a-8b69-4ad2-8cad-018c8d48cb23","path":"sprites/spr_rock_part/spr_rock_part.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_rock_part","path":"sprites/spr_rock_part/spr_rock_part.yy",},"resourceVersion":"1.0","name":"983411ed-1fe1-4a6c-8314-fe460c916ae0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e0ff0aeb-7e6c-447c-bfa7-44a09257ec39","path":"sprites/spr_rock_part1/spr_rock_part1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e0ff0aeb-7e6c-447c-bfa7-44a09257ec39","path":"sprites/spr_rock_part1/spr_rock_part1.yy",},"LayerId":{"name":"54631e09-6c1e-477d-9b9d-6acc2361b6c6","path":"sprites/spr_rock_part1/spr_rock_part1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_rock_part1","path":"sprites/spr_rock_part1/spr_rock_part1.yy",},"resourceVersion":"1.0","name":"e0ff0aeb-7e6c-447c-bfa7-44a09257ec39","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_rock_part","path":"sprites/spr_rock_part/spr_rock_part.yy",},
+    "spriteId": {"name":"spr_rock_part1","path":"sprites/spr_rock_part1/spr_rock_part1.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"2fc4a541-0693-424f-bb77-a734fa1e0315","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"983411ed-1fe1-4a6c-8314-fe460c916ae0","path":"sprites/spr_rock_part/spr_rock_part.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7eb6ee6c-e97b-46f3-8cc5-b6bee74d856c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e0ff0aeb-7e6c-447c-bfa7-44a09257ec39","path":"sprites/spr_rock_part1/spr_rock_part1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 4,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_rock_part","path":"sprites/spr_rock_part/spr_rock_part.yy",},
+    "parent": {"name":"spr_rock_part1","path":"sprites/spr_rock_part1/spr_rock_part1.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_rock_part",
+    "name": "spr_rock_part1",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"079d4c5a-8b69-4ad2-8cad-018c8d48cb23","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"54631e09-6c1e-477d-9b9d-6acc2361b6c6","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Enemy.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_rock_part",
+  "name": "spr_rock_part1",
   "tags": [],
   "resourceType": "GMSprite",
 }
