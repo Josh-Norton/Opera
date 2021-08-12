@@ -9,5 +9,12 @@ if ( rescue > 0 ) {
 if (flash || flashing_timer <= 0) {
 	var angle = point_direction(0, 0, x_speed, y_speed / 4);
 	draw_sprite_ext(sprite_index, player - 1, x, y, 1, 1, angle, image_blend, image_alpha);
+	
+	if (shield_timer > 0) {
+		draw_set_color(c_white);
+		draw_set_alpha(0.5);
+		draw_circle(x, y, 20, false);
+		draw_set_alpha(1);
+	}
 }
 

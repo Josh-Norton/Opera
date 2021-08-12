@@ -22,14 +22,6 @@ rescue = 0;
 
 powerup_timer_max = 300;
 
-
-rapid_fire_timer = 60;
-
-
-multi_fire_activated = false;
-
-multi_fire_timer = 60;
-
 shield_timer = 0;
 rapid_timer = 0;
 triple_timer = 0;

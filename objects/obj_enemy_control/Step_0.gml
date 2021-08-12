@@ -43,43 +43,14 @@ else {
 	}
 	
 	/*
-	if(boss_timer==0 ){
+	if (boss_timer == 0){
 		instance_create_layer(room_width + 32, random(room_height - obj_terrain_generator.height - 32), enemy_layer, obj_enemy_boss_super_tank);
-		
 	}
+	*/
 
 	goody_timer -= 1;
-	if ( goody_timer == 0 ){
+	if (goody_timer == 0) {
 		goody_timer = max_goody;
-			instance_create_layer(room_width + 32, room_height, enemy_layer, obj_person);
-			
-	
+		instance_create_layer(room_width + 32, room_height, enemy_layer, obj_person);
 	}
-
-	
-	power_up_timer -= 1;
-	if(power_up_timer == 0){
-		power_up_timer = max_power_up_timer;
-	}
-	//Need to refactor the code here
-	shield_timer -= 1;
-
-	if(shield_timer ==0){
-		shield_timer = max_shield_timer;
-		instance_create_layer(room_width + 32, random(bottom), enemy_layer, obj_shield);
-	}
-	
-	rapid_fire_timer -=1;
-	if(rapid_fire_timer ==0){
-		rapid_fire_timer = max_rapid_fire_timer;
-		instance_create_layer(room_width + 32, random(bottom), enemy_layer, obj_rapid_fire);
-	}
-	
-	multi_fire_timer -=1;
-	if(multi_fire_timer ==0){
-		multi_fire_timer = max_multi_fire_timer;
-		instance_create_layer(room_width + 32, random(bottom), enemy_layer, obj_multi_fire);
-	}
-	
-
 }

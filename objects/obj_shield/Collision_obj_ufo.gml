@@ -2,6 +2,6 @@
 // You can write your code in this editor
 event_inherited();
 
-with (obj_ufo) {
+with (other) {
 	shield_timer = powerup_timer_max;
 }
