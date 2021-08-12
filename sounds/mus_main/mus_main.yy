@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mus_main.wav",
-  "duration": 42.6666679,
+  "duration": 85.3333359,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",
