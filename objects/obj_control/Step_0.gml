@@ -53,6 +53,8 @@ if (game_over) {
 	}
 }
 else if (!instance_exists(obj_ufo)) {
+	audio_stop_sound(mus_main);
+	
 	game_over_timer--;
 	if (game_over_timer <= 0) {
 		audio_play_sound(snd_text, 0, false);
