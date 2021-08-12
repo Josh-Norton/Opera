@@ -3,5 +3,5 @@
 event_inherited();
 
 with (obj_ufo) {
-	shield_timer = powerup_timer_max;
+	triple_timer = powerup_timer_max;
 }

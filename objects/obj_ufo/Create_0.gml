@@ -18,14 +18,10 @@ flash_timer = flash_timer_max;
 flashing_timer_max = 120;
 flashing_timer = 0;
 
-
 rescue = 0;
 
-shield_activated = false;
+powerup_timer_max = 300;
 
-shield_timer = 20;
-
-rapid_fire_activated = false;
 
 rapid_fire_timer = 60;
 
@@ -33,3 +29,8 @@ rapid_fire_timer = 60;
 multi_fire_activated = false;
 
 multi_fire_timer = 60;
+
+shield_timer = 0;
+rapid_timer = 0;
+triple_timer = 0;
+
