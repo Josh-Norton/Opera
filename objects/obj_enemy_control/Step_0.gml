@@ -42,7 +42,7 @@ else {
 		}
 	}
 	
-	/*
+
 	if(boss_timer==0 ){
 		instance_create_layer(room_width + 32, random(room_height - obj_terrain_generator.height - 32), enemy_layer, obj_enemy_boss_super_tank);
 		
