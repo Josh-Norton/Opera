@@ -10,3 +10,4 @@ powerup_list = ds_list_create();
 ds_list_add(powerup_list, obj_rapid);
 ds_list_add(powerup_list, obj_triple);
 ds_list_add(powerup_list, obj_shield);
+ds_list_add(powerup_list, obj_nuke);

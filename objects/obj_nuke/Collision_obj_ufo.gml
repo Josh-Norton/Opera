@@ -3,5 +3,5 @@
 event_inherited();
 
 with (other) {
-	rapid_timer = powerup_timer_max;
+	instance_destroy(obj_enemy);
 }
