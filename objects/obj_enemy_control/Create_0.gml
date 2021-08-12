@@ -24,7 +24,7 @@ enemy_pool_id = 0;
 curr_enemy_pool = ds_list_create();
 ds_list_add(curr_enemy_pool, obj_rock);
 
-timer_max = 120;
+timer_max = 180;
 timer = timer_max;
 timer_scale = 1;
 timer_scale_incr = 0.1;
