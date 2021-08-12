@@ -59,5 +59,9 @@ rapid_fire_timer = 20;
 max_rapid_fire_timer = 200;
 
 
+multi_fire_timer = 20;
+max_multi_fire_timer = 200;
+
+
 
 

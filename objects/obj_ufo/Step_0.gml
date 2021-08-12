@@ -41,6 +41,16 @@ if (laser_timer <= 0 && shoot_button) {
 	laser.dir = dir;
 	laser.player = player;
 	
+	if(multi_fire_activated==true){
+	var laser_multi_1 = instance_create_layer(x + ldx, y + ldy, "Instances", obj_laser);
+	laser_multi_1.dir = dir - 15;
+	laser_multi_1.player = player;
+	
+	var laser_multi_2 = instance_create_layer(x + ldx, y + ldy, "Instances", obj_laser);
+	laser_multi_2.dir = dir + 15;
+	laser_multi_2.player = player;
+	}
+		
 	laser_timer = laser_timer_max;
 }
 
@@ -69,5 +79,11 @@ if(shield_activated==true && shield_timer <= 0){
 rapid_fire_timer -= 1;
 if(rapid_fire_activated==true && rapid_fire_timer <= 0){
 	rapid_fire_activated = false;
+	laser_timer_max = 10;
+}
+
+multi_fire_timer -= 1;
+if(multi_fire_activated==true && multi_fire_timer <= 0){
+	multi_fire_activated = false;
 	laser_timer_max = 10;
 }

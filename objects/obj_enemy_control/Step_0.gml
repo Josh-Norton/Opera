@@ -59,7 +59,7 @@ else {
 	if(power_up_timer == 0){
 		power_up_timer = max_power_up_timer;
 	}
-	
+	//Need to refactor the code here
 	shield_timer -= 1;
 
 	if(shield_timer ==0){
@@ -72,6 +72,13 @@ else {
 		rapid_fire_timer = max_rapid_fire_timer;
 		instance_create_layer(room_width + 32, random(bottom), enemy_layer, obj_rapid_fire);
 	}
+	
+	multi_fire_timer -=1;
+	if(multi_fire_timer ==0){
+		multi_fire_timer = max_multi_fire_timer;
+		instance_create_layer(room_width + 32, random(bottom), enemy_layer, obj_multi_fire);
+	}
+	
 	
 	
 }
