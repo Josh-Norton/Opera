@@ -21,3 +21,5 @@ charge_timer_max = 45;
 charge_timer = charge_timer_max;
 
 can_fire = true;
+
+part_sprite = spr_cannon_part;
