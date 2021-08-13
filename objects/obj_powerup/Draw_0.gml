@@ -7,10 +7,10 @@ draw_set_font(fnt_powerup);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-draw_text(x, y, string_char_at(name, 0));
+draw_text(x, y, char);
 
 draw_set_alpha(2 - pulse * 2);
 
-draw_text_transformed(x, y, string_char_at(name, 0), pulse * pulse_scale, pulse * pulse_scale, 0);
+draw_text_transformed(x, y, char, pulse * pulse_scale, pulse * pulse_scale, 0);
 
 draw_set_alpha(1);

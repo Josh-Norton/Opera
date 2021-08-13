@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-event_inherited();
-
 name = "Shield";
 color = c_aqua;
+
+event_inherited();
