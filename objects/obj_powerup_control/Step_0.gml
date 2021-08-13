@@ -11,3 +11,13 @@ if (powerup_timer <= 0) {
 	
 	powerup_timer = powerup_timer_max + random(powerup_timer_var);
 }
+
+if(alarm[0] mod 10 > 5){
+	lay_id = layer_get_id ("Background");
+	back_id = layer_background_get_id (lay_id);
+	layer_background_blend (back_id, c_white);
+}else{
+    lay_id = layer_get_id ("Background");
+	back_id = layer_background_get_id (lay_id);
+	layer_background_blend (back_id, c_black);
+}
