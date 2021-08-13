@@ -6,3 +6,5 @@ hp_max = 1;
 hp = hp_max;
 points_value = hp_max * 20;
 
+image_angle = random(360);
+

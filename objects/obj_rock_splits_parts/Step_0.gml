@@ -4,4 +4,5 @@ event_inherited();
 
 //x -= 3;
 
-image_angle = direction-180;
+image_angle += direction-180;
+
