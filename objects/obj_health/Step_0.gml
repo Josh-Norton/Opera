@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-event_inherited();
+x += x_speed;
 
-name = "Shield";
-color = c_aqua;
+pulse += 0.05;
+if (pulse > 1) {
+	frame++;
+	pulse = 0;
+}

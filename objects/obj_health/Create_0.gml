@@ -2,4 +2,5 @@
 // You can write your code in this editor
 event_inherited();
 
-name = "Health";
+name = "+1 Life";
+frame = 0;

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_nuke",
-    "path": "sprites/spr_nuke/spr_nuke.yy",
+    "name": "spr_powerup",
+    "path": "sprites/spr_powerup/spr_powerup.yy",
   },
   "solid": false,
   "visible": true,

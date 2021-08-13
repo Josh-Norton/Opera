@@ -3,3 +3,4 @@
 event_inherited();
 
 name = "Triple";
+color = make_color_rgb(255, 0, 255);

@@ -3,3 +3,4 @@
 event_inherited();
 
 name = "Rapid";
+color = c_lime;
