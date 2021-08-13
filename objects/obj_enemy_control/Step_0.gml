@@ -50,8 +50,8 @@ else {
 	*/
 
 	goody_timer -= 1;
-	if (goody_timer == 0) {
-		goody_timer = max_goody;
+	if (goody_timer <= 0) {
+		goody_timer = max_goody + random(max_goody)
 		instance_create_layer(room_width + 32, room_height, enemy_layer, obj_person);
 	}
 }

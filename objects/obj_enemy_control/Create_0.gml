@@ -48,19 +48,9 @@ ds_list_add(goody_pool,
     obj_person
 );
 
-max_goody = 120;
-goody_timer = 10;
-power_up_timer = 20;
-max_power_up_timer = 200;
+max_goody = 300;
+goody_timer = max_goody + random(max_goody);
 shield_timer = 20;
-max_shield_timer = 200;
-
-rapid_fire_timer = 20;
-max_rapid_fire_timer = 200;
-
-
-multi_fire_timer = 20;
-max_multi_fire_timer = 200;
 
 
 
