@@ -3,3 +3,4 @@
 event_inherited();
 
 name = "Bomb";
+color = c_yellow;

@@ -3,3 +3,4 @@
 event_inherited();
 
 name = "Shield";
+color = c_aqua;
