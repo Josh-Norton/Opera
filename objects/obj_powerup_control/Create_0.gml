@@ -2,8 +2,8 @@
 // You can write your code in this editor
 powerup_layer = layer;
 
-powerup_timer_max = 60;//60 * 10;
-powerup_timer_var = 60;//60 * 5;
+powerup_timer_max = 60 * 10;
+powerup_timer_var = 60 * 5;
 powerup_timer = powerup_timer_max + random(powerup_timer_var);
 
 powerup_list = ds_list_create();
