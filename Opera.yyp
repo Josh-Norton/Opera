@@ -49,6 +49,7 @@
     {"id":{"name":"obj_terrain_bottom","path":"objects/obj_terrain_bottom/obj_terrain_bottom.yy",},"order":3,},
     {"id":{"name":"fnt_title","path":"fonts/fnt_title/fnt_title.yy",},"order":1,},
     {"id":{"name":"spr_ufo_cannon","path":"sprites/spr_ufo_cannon/spr_ufo_cannon.yy",},"order":16,},
+    {"id":{"name":"fnt_powerup","path":"fonts/fnt_powerup/fnt_powerup.yy",},"order":2,},
     {"id":{"name":"bg_bldg_front","path":"sprites/bg_bldg_front/bg_bldg_front.yy",},"order":8,},
     {"id":{"name":"spr_rapid_fire","path":"sprites/spr_rapid_fire/spr_rapid_fire.yy",},"order":2,},
     {"id":{"name":"obj_cannon","path":"objects/obj_cannon/obj_cannon.yy",},"order":11,},
