@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"obj_transition","path":"objects/obj_transition/obj_transition.yy",},"order":4,},
     {"id":{"name":"obj_shield","path":"objects/obj_shield/obj_shield.yy",},"order":1,},
     {"id":{"name":"obj_rock_splits","path":"objects/obj_rock_splits/obj_rock_splits.yy",},"order":3,},
     {"id":{"name":"obj_powerup","path":"objects/obj_powerup/obj_powerup.yy",},"order":2,},
@@ -73,6 +74,7 @@
     {"id":{"name":"snd_highscore","path":"sounds/snd_highscore/snd_highscore.yy",},"order":4,},
     {"id":{"name":"spr_rock","path":"sprites/spr_rock/spr_rock.yy",},"order":1,},
     {"id":{"name":"obj_enemy_boss_super_tank","path":"objects/obj_enemy_boss_super_tank/obj_enemy_boss_super_tank.yy",},"order":15,},
+    {"id":{"name":"scr_transition","path":"scripts/scr_transition/scr_transition.yy",},"order":0,},
     {"id":{"name":"obj_bouncer","path":"objects/obj_bouncer/obj_bouncer.yy",},"order":10,},
     {"id":{"name":"spr_enemy_ufo_bullet","path":"sprites/spr_enemy_ufo_bullet/spr_enemy_ufo_bullet.yy",},"order":15,},
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"order":4,},
