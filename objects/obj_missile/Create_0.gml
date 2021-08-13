@@ -8,3 +8,5 @@ points_value = hp_max * 200;
 
 image_angle = 180;
 image_speed = 0.2;
+
+part_sprite = spr_missile_part;

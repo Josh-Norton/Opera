@@ -11,4 +11,5 @@ if (hp <= 0) {
 
 flash = 5;
 
-instance_create_layer(x, y, "Instances", obj_part);
+var part = instance_create_layer(x, y, "Instances", obj_part);
+part.sprite_index = part_sprite;

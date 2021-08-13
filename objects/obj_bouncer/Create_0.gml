@@ -13,3 +13,5 @@ y_speed = 0;
 bounce_speed = -6.5;
 
 bounce_angle = 0;
+
+part_sprite = spr_bouncer_part;

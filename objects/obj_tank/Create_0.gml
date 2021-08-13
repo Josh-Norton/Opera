@@ -3,6 +3,7 @@
 
 event_inherited();
 
+part_sprite = spr_tank_part;
 
 hp_max = 3;
 hp = hp_max;

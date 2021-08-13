@@ -5,5 +5,6 @@ if (death_sound) {
 }
 
 for (var i = 0; i < 5; i++) {
-	instance_create_layer(x, y, "Instances", obj_part);
+	var part = instance_create_layer(x, y, "Instances", obj_part);
+	part.sprite_index = part_sprite;
 }
