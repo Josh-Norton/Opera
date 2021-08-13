@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_multi_fire",
-    "path": "sprites/spr_multi_fire/spr_multi_fire.yy",
+    "name": "spr_powerup",
+    "path": "sprites/spr_powerup/spr_powerup.yy",
   },
   "solid": false,
   "visible": true,
