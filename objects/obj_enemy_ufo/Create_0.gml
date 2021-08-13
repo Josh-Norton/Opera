@@ -10,3 +10,5 @@ myDirection = 180;
 
 image_angle = 180;
 alarm[1] = 60;
+
+part_sprite = spr_enemy_ufo_part;

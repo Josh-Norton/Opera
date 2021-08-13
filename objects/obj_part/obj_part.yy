@@ -32,7 +32,7 @@
     "path": "folders/Objects/Enemy.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_rock_part",
+  "name": "obj_part",
   "tags": [],
   "resourceType": "GMObject",
 }

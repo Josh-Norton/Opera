@@ -3,6 +3,7 @@
 flash = 0;
 death_sound = true;
 hp_chance_max = 0.35;
+part_sprite = spr_rock_part;
 
 // Set this up in the child object:
 
