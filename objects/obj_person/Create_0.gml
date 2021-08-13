@@ -10,4 +10,4 @@ rescued = false;
 
 hero = false;
 
-points_value = 100;
+points_value = 500;
