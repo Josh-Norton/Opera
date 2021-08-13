@@ -2,6 +2,8 @@
 // You can write your code in this editor
 
 if ( instance_exists(obj_ufo) ) {
+	audio_play_sound(snd_enemy_shoot, 0, false);
+	
 	var ldx = lengthdir_x(12, myDirection);
 	var ldy = lengthdir_y(12, myDirection);
 	

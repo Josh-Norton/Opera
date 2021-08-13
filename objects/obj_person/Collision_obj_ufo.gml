@@ -2,6 +2,8 @@
 // You can write your code in this editor
 //instance_destroy(other);
 if ( rescued == false ) {
+	audio_play_sound(snd_person, 0, false);
+	
 	rescued = true;	
 	other.rescue = 30;
 	hero = other;
