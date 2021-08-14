@@ -19,7 +19,7 @@ draw_set_color(c_white);
 
 draw_set_font(fnt_main);
 
-draw_text(room_width / 2, room_height * (2/5), "VS");
+draw_text(room_width / 2, room_height * (2/5) - 4, "VS");
 	
 draw_text(room_width / 2, room_height * (3/4), "Press <up> or <left mouse button> for 1 Player\nPress <w> for 2 Player");
 
