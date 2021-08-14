@@ -33,6 +33,10 @@ if (game_over) {
 	var game_over_x = room_width / 2;
 	var game_over_y = room_height / 2;
 	
+	if (obj_global_state.browser) {
+		game_over_y -= 4;
+	}
+	
 	if (game_over_step > 0) {
 		draw_text(game_over_x, game_over_y - 10 * line_height, "GAME OVER");
 	}
@@ -50,7 +54,7 @@ if (game_over) {
 		draw_text(game_over_x - 80, game_over_y, "Player 1 Score\n" + string(points[0]));
 
 		var p2_score = "-";
-		if (points[1] > 0) {
+		if (obj_global_state.players > 1) {
 			p2_score = string(points[1]);
 		}
 
