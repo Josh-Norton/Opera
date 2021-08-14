@@ -75,6 +75,11 @@ if (hp <= 0) {
 
 if (shield_timer > 0) {
 	shield_timer--;
+	
+	var enemy = collision_circle(x, y, shield_radius, obj_enemy, false, true);
+	with (enemy) {
+		event_user(1);
+	}
 }
 if (rapid_timer > 0) {
 	rapid_timer--;

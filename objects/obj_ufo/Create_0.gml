@@ -25,3 +25,5 @@ powerup_timer_max = 300;
 shield_timer = 0;
 rapid_timer = 0;
 triple_timer = 0;
+
+shield_radius = 20;
