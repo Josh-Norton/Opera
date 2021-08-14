@@ -2,9 +2,9 @@
 // You can write your code in this editor
 event_inherited();
 
-hp_max = 1;
+hp_max = 3;
 hp = hp_max;
-points_value = hp_max * 50;
+points_value = 300;
 
 image_angle = random(360);
 
