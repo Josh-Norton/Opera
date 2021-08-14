@@ -34,7 +34,8 @@ section = "data";
 key = "highscore";
 
 ini_open(fname);
-highscore = ini_read_real(section, key, 0);
+highscore[0] = ini_read_real(section, key + "1", 0);
+highscore[1] = ini_read_real(section, key + "2", 0);
 ini_close();
 
 flash_highscore = false;

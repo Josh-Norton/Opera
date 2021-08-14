@@ -44,10 +44,15 @@ if (game_over) {
 	if (game_over_step > 1) {	
 		var hscore = " ";
 		if (!flash_highscore || hf) {
-			hscore = string(highscore)
+			hscore = string(highscore[obj_global_state.players - 1])
+		}
+		
+		var text = "Solo";
+		if (obj_global_state.players > 1) {
+			text = "Coop";
 		}
 			
-		draw_text(game_over_x, game_over_y - 5 * line_height, "Highscore\n" + hscore);
+		draw_text(game_over_x, game_over_y - 5 * line_height, "Highscore - " + text + "\n" + hscore);
 	}
 	
 	if (game_over_step > 2) {		
@@ -71,13 +76,13 @@ if (game_over) {
 	}
 			
 	if (game_over_step > 4) {
-		draw_text(game_over_x, game_over_y + 10 * line_height, "Press <up> to restart\nPress Esc to exit");
+		draw_text(game_over_x, game_over_y + 10 * line_height, "Press <up> to restart\nPress <Esc> to exit");
 	}
 }
 else {
 	draw_set_color(c_white);
 	
-	draw_text(room_width / 2, 16, string(highscore));
+	draw_text(room_width / 2, 16, string(highscore[obj_global_state.players-1]));
 	
 	if (instance_exists(obj_player1)) {
 		var x_pos = room_width * (1/4);
