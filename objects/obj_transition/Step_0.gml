@@ -2,11 +2,10 @@
 // You can write your code in this editor
 wipe += 0.1;
 
-if (wipe >= 0.1 && goto = true) {
+if (wipe >= 0 && goto = true) {
 	goto = false;
-	draw_flush();
 	room_goto(target);
 }
-if (wipe >= 1) {
+if (wipe >= wipe_scale) {
 	instance_destroy();
 }
