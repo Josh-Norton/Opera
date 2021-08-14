@@ -11,7 +11,7 @@ if ( obj_global_state.players == 1) {
 }
 
 if (keyboard_check(vk_escape)) {
-	room_goto(rm_title);
+	room_goto_trans(rm_title);
 }
 
 if (game_over) {
@@ -48,7 +48,7 @@ if (game_over) {
 		
 		if (keyboard_check(ord("R")) || keyboard_check(vk_up) || mouse_check_button_pressed(mb_left) ) {
 			obj_global_state.players = 1;
-			room_restart();
+			room_goto_trans(room);
 		}
 	}
 }
