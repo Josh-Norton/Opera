@@ -98,6 +98,7 @@
     {"id":{"name":"snd_text","path":"sounds/snd_text/snd_text.yy",},"order":3,},
     {"id":{"name":"obj_terrain","path":"objects/obj_terrain/obj_terrain.yy",},"order":0,},
     {"id":{"name":"spr_ufo_beam","path":"sprites/spr_ufo_beam/spr_ufo_beam.yy",},"order":7,},
+    {"id":{"name":"fnt_title2","path":"fonts/fnt_title2/fnt_title2.yy",},"order":3,},
     {"id":{"name":"bg1","path":"sprites/bg1/bg1.yy",},"order":5,},
     {"id":{"name":"spr_tank1","path":"sprites/spr_tank1/spr_tank1.yy",},"order":19,},
     {"id":{"name":"spr_nuke","path":"sprites/spr_nuke/spr_nuke.yy",},"order":4,},
