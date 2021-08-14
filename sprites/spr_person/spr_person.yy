@@ -24,12 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"78ec973f-31fc-41d2-87a4-44a331b23440","path":"sprites/spr_person/spr_person.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"78ec973f-31fc-41d2-87a4-44a331b23440","path":"sprites/spr_person/spr_person.yy",},"LayerId":{"name":"f58a2945-838f-472d-8855-fea32bab44be","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_person","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","name":"78ec973f-31fc-41d2-87a4-44a331b23440","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4e86ccf1-626d-4558-8fdf-266a070e36c3","path":"sprites/spr_person/spr_person.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4e86ccf1-626d-4558-8fdf-266a070e36c3","path":"sprites/spr_person/spr_person.yy",},"LayerId":{"name":"f58a2945-838f-472d-8855-fea32bab44be","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_person","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","name":"4e86ccf1-626d-4558-8fdf-266a070e36c3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"342641ca-4f50-4063-a5cf-02efecbf7971","path":"sprites/spr_person/spr_person.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"342641ca-4f50-4063-a5cf-02efecbf7971","path":"sprites/spr_person/spr_person.yy",},"LayerId":{"name":"f58a2945-838f-472d-8855-fea32bab44be","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_person","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","name":"342641ca-4f50-4063-a5cf-02efecbf7971","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"84b412c6-d519-4d85-8ee8-47ce9921c8ea","path":"sprites/spr_person/spr_person.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"84b412c6-d519-4d85-8ee8-47ce9921c8ea","path":"sprites/spr_person/spr_person.yy",},"LayerId":{"name":"f58a2945-838f-472d-8855-fea32bab44be","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_person","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","name":"84b412c6-d519-4d85-8ee8-47ce9921c8ea","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"36b7bbcb-10d6-4790-918f-4fef17a053e3","path":"sprites/spr_person/spr_person.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"36b7bbcb-10d6-4790-918f-4fef17a053e3","path":"sprites/spr_person/spr_person.yy",},"LayerId":{"name":"f58a2945-838f-472d-8855-fea32bab44be","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_person","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","name":"36b7bbcb-10d6-4790-918f-4fef17a053e3","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_person","path":"sprites/spr_person/spr_person.yy",},
@@ -39,13 +42,14 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 2.0,
+    "length": 3.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b5093241-dfbf-4452-af28-09e8d9521c2e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"78ec973f-31fc-41d2-87a4-44a331b23440","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"0fa8950d-a5ad-4ade-ad9c-4d516fdbd6ee","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4e86ccf1-626d-4558-8fdf-266a070e36c3","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ff38bf79-a896-4ef9-94ec-0d3dbade9eb5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"342641ca-4f50-4063-a5cf-02efecbf7971","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9762a5ac-13e4-4c59-b129-cc150cf49483","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"84b412c6-d519-4d85-8ee8-47ce9921c8ea","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"232ef8c0-9566-4574-a761-c552df1c4f20","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"36b7bbcb-10d6-4790-918f-4fef17a053e3","path":"sprites/spr_person/spr_person.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
