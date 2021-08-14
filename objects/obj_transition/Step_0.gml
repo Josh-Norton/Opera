@@ -2,7 +2,7 @@
 // You can write your code in this editor
 wipe += 0.1;
 
-if (wipe >= 0 && goto = true) {
+if (wipe > 0 && goto = true) {
 	goto = false;
 	room_goto(target);
 }
