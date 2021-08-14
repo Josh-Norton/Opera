@@ -26,16 +26,16 @@ if (game_over) {
 		if (game_over_timer2 <= 0) {
 			audio_play_sound(snd_text, 0, false);
 			
-			if (game_over_step > 3) {	
-				if (total_points > highscore) {
+			if (game_over_step > 3) {
+				if (total_points > highscore[obj_global_state.players - 1]) {
 					audio_stop_sound(snd_text);
 					audio_play_sound(snd_highscore, 0, false);
 					
-					highscore = total_points;
+					highscore[obj_global_state.players - 1] = total_points;
 					flash_highscore = true;
 		
 					ini_open(fname);
-					ini_write_real(section, key, highscore);
+					ini_write_real(section, key + string(obj_global_state.players), highscore[obj_global_state.players - 1]);
 					ini_close();
 				}
 			}
@@ -63,4 +63,27 @@ else if (!instance_exists(obj_ufo)) {
 	
 		total_points = points[0] + points[1];
 	}
+}
+
+if (tutorial > 0) {
+	var ready = true;
+	
+	if (instance_exists(obj_player1)) {
+		if (!obj_player1.ready) {
+			ready = false;
+		}
+	}
+	if (instance_exists(obj_player2)) {
+		if (!obj_player2.ready) {
+			ready = false;
+		}
+	}
+	
+	tutorial--;
+	if (!ready) {
+		tutorial = 300;
+	}
+}
+else {
+	obj_global_state.tutorial = false;
 }

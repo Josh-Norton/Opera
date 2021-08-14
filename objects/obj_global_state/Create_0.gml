@@ -30,3 +30,5 @@ window_set_size(new_width, new_height);
 if (!browser) {
 	window_set_position(bw / 2 - new_width / 2, bh / 2 - new_height / 2);
 }
+
+tutorial = false;

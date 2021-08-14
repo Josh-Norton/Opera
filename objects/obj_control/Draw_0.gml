@@ -44,10 +44,15 @@ if (game_over) {
 	if (game_over_step > 1) {	
 		var hscore = " ";
 		if (!flash_highscore || hf) {
-			hscore = string(highscore)
+			hscore = string(highscore[obj_global_state.players - 1])
+		}
+		
+		var text = "Solo";
+		if (obj_global_state.players > 1) {
+			text = "Coop";
 		}
 			
-		draw_text(game_over_x, game_over_y - 5 * line_height, "Highscore\n" + hscore);
+		draw_text(game_over_x, game_over_y - 5 * line_height, "Highscore - " + text + "\n" + hscore);
 	}
 	
 	if (game_over_step > 2) {		
@@ -71,13 +76,13 @@ if (game_over) {
 	}
 			
 	if (game_over_step > 4) {
-		draw_text(game_over_x, game_over_y + 10 * line_height, "Press <up> to restart\nPress Esc to exit");
+		draw_text(game_over_x, game_over_y + 10 * line_height, "Press <up> to restart\nPress <Esc> to exit");
 	}
 }
 else {
 	draw_set_color(c_white);
 	
-	draw_text(room_width / 2, 16, string(highscore));
+	draw_text(room_width / 2, 16, string(highscore[obj_global_state.players-1]));
 	
 	if (instance_exists(obj_player1)) {
 		var x_pos = room_width * (1/4);
@@ -107,6 +112,23 @@ else {
 	
 	if ( obj_global_state.players == 1 ) { 
 		draw_set_halign(fa_right);
-		draw_text(room_width - 12, 16, "Press 'W' for Player 2");
+		draw_text(room_width - 12, 16, "Press <W> for Player 2");
+	}
+	
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_center);
+	
+	if (tutorial > 0) {
+		draw_text(room_width / 2, room_height * (1 / 3), 
+			"Player 1:\n" + 
+			"Hold <Up> or <Left Mouse Button> to fly up\n" +
+			"Release to drop down");
+			
+		if (obj_global_state.players > 1) {
+			draw_text(room_width / 2, room_height * (2 / 3), 
+				"Player 2:\n" + 
+				"Hold <W> to fly up\n" +
+				"Release to drop down");
+		}
 	}
 }

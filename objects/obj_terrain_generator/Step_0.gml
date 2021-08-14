@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-timer -= x_speed;
+if (obj_control.tutorial <= 0) {
+	timer -= x_speed;
+}
 if (timer <= 0) {
 	var mid = height_max / 2;
 	var chance = terrain_dir * (height - mid) / mid;

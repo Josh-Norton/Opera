@@ -27,3 +27,5 @@ rapid_timer = 0;
 triple_timer = 0;
 
 shield_radius = 20;
+
+ready = false;
