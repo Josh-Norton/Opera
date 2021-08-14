@@ -3,9 +3,11 @@
 event_user(1);
 
 if (up_button) {
+	ready = true;
 	y_speed -= 0.25;
+	obj_control.tutorial--;
 }
-else {
+else if (ready) {
 	y_speed += 0.125;
 }
 
@@ -29,7 +31,7 @@ if (y > room_height) {
 }
 
 laser_timer--;
-if (laser_timer <= 0 && shoot_button) {
+if (laser_timer <= 0 && shoot_button && ready) {
 	var sound = audio_play_sound(snd_shoot, 0, false);
 	audio_sound_pitch(sound, random_range(0.7, 1));
 	

@@ -42,3 +42,8 @@ flash_highscore = false;
 hf = true;
 hf_timer_max = 10;
 hf_timer = hf_timer_max;
+
+tutorial = 0;
+if (obj_global_state.tutorial) {
+	tutorial = 300;
+}

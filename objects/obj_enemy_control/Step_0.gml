@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (start_timer > 0) {
-	start_timer--;
+	if (obj_control.tutorial <= 0) {
+		start_timer--;
+	}
 }
 else {
 	var bottom = room_height - obj_terrain_generator.height - 32;

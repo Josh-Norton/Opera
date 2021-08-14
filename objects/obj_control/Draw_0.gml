@@ -107,6 +107,23 @@ else {
 	
 	if ( obj_global_state.players == 1 ) { 
 		draw_set_halign(fa_right);
-		draw_text(room_width - 12, 16, "Press 'W' for Player 2");
+		draw_text(room_width - 12, 16, "Press <W> for Player 2");
+	}
+	
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_center);
+	
+	if (tutorial > 0) {
+		draw_text(room_width / 2, room_height * (1 / 3), 
+			"Player 1:\n" + 
+			"Hold <Up> or <Left Mouse Button> to fly up\n" +
+			"Release to drop down");
+			
+		if (obj_global_state.players > 1) {
+			draw_text(room_width / 2, room_height * (2 / 3), 
+				"Player 2:\n" + 
+				"Hold <W> to fly up\n" +
+				"Release to drop down");
+		}
 	}
 }

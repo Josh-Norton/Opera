@@ -64,3 +64,26 @@ else if (!instance_exists(obj_ufo)) {
 		total_points = points[0] + points[1];
 	}
 }
+
+if (tutorial > 0) {
+	var ready = true;
+	
+	if (instance_exists(obj_player1)) {
+		if (!obj_player1.ready) {
+			ready = false;
+		}
+	}
+	if (instance_exists(obj_player2)) {
+		if (!obj_player2.ready) {
+			ready = false;
+		}
+	}
+	
+	tutorial--;
+	if (!ready) {
+		tutorial = 300;
+	}
+}
+else {
+	obj_global_state.tutorial = false;
+}

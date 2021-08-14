@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-powerup_timer--;
+if (obj_control.tutorial <= 0) {
+	powerup_timer--;
+}
 if (powerup_timer <= 0) {
 	var bottom = room_height - obj_terrain_generator.height - 32;
 	
