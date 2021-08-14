@@ -6,7 +6,7 @@ hp_max = 3;
 hp = hp_max;
 points_value = hp_max * 200;
 
-image_angle = 180;
+image_xscale = -1;
 image_speed = 0.2;
 
 part_sprite = spr_missile_part;
