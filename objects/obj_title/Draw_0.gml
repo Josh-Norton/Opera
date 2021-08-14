@@ -7,10 +7,13 @@ draw_set_color($3cd070);
 
 draw_set_font(fnt_title);
 
-draw_text(room_width / 2, room_height * (1/3), "UFO Game");
+draw_text(room_width / 2, room_height * (2/5), "UFO Game");
 
 draw_set_color(c_white);
 
 draw_set_font(fnt_main);
 	
-draw_text(room_width / 2, room_height * (2/3), "Press <up> for 1 Player\nPress <w> for player 2 to join");
+draw_text(room_width / 2, room_height * (5/7), "Press <up> or <left mouse button> for 1 Player\nPress <w> for 2 Player");
+
+draw_text(room_width * (1 / 4), 24, "Highscore - Solo\n" + string(highscore[0]));
+draw_text(room_width * (3 / 4), 24, "Highscore - Coop\n" + string(highscore[1]));
