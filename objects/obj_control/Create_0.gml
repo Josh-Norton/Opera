@@ -48,3 +48,5 @@ tutorial = 0;
 if (obj_global_state.tutorial) {
 	tutorial = 300;
 }
+
+audio_play_sound(mus_main, 0, true);

@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mus_title.wav",
-  "duration": 51.2,
+  "soundFile": "mus_title.mp3",
+  "duration": 51.22608,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",
